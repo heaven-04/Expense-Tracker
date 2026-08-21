@@ -98,19 +98,4 @@ Expense-Tracker/
 | POST   | `/expenses/add`          | Add a new expense                     |
 | DELETE | `/expenses/delete/{id}`  | Delete an expense by ID               |
 
-## Security Notes
 
-- The JWT secret key in `oauth2.py` is currently hard-coded for development purposes. **Before deploying to production**, move it to an environment variable and use a properly generated secret.
-- The database URL is a placeholder (`YOUR_DATABASE_URL`) and must be set before running the app.
-
-## Roadmap / Ideas for Improvement
-
-- Add a `requirements.txt` / `pyproject.toml` for reproducible installs
-- Move secrets and DB credentials to environment variables (`.env`)
-- Add expense update (`PUT`/`PATCH`) endpoint
-- Add filtering/sorting (by date, category, amount)
-- Add automated tests
-
-## License
-
-This project currently has no license specified. Consider adding one (e.g. MIT) if you plan to share or accept contributions.
