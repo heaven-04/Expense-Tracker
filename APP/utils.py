@@ -1,0 +1,9 @@
+from pwdlib import PasswordHash
+pwd_hasher = PasswordHash.recommended()
+
+def hash_password(password : str):
+    return pwd_hasher.hash(password)
+
+def verify_password(password : str , hashed_password : str) :
+    return pwd_hasher.verify(password ,hashed_password)
+
